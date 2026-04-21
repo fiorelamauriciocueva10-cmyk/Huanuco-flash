@@ -14,21 +14,24 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
 
     const fecha = new Date().toLocaleString("es-PE");
 
-    const mensaje = `\u{1F680} NUEVO PEDIDO
+    const mensaje = `\u{1F680} NUEVO PEDIDO - HUÁNUCO FLASH \u{1F680}
 
-\u{1F552} ${fecha}
+\u{1F552} Hora: ${fecha}
 
-\u{1F464} ${cliente}
-\u{1F4DE} ${telefono}
+\u{1F464} Cliente: ${cliente}
+\u{1F4DE} Teléfono: ${telefono}
 
-\u{1F4CD} ${entrega}
-\u{1F4CC} ${referencia}
+\u{1F4CD} Recojo: ${recojo}
 
-\u{1F4E6} ${pedido}
+\u{1F4CD} Entrega: ${entrega}
+\u{1F4CC} Referencia: ${referencia}
 
-\u{1F4B0} ${costo} - ${pago}
+\u{1F4E6} Pedido: ${pedido}
 
-\u{1F4DD} ${obs}`;
+\u{1F4B0} Costo: ${costo}
+\u{1F4B3} Pago: ${pago}
+
+\u{1F4DD} Obs: ${obs}`;
 
     let url;
 
