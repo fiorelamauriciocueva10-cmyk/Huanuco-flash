@@ -11,8 +11,11 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
     const pago = document.getElementById("pago").value;
     const obs = document.getElementById("obs").value;
     const motorizado = document.getElementById("motorizado").value;
+    const fecha = new Date().toLocaleString();
 
    const mensaje = `\u{1F680} *NUEVO PEDIDO - HUÁNUCO FLASH* \u{1F680}
+
+\u{1F552} Hora: ${fecha}
 
 \u{1F464} Cliente: ${cliente}
 \u{1F4DE} Teléfono: ${telefono}
