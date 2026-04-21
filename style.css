@@ -28,16 +28,22 @@ input, textarea, select {
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background: #22c55e;
+    margin: 5px;
+    padding: 8px;
     border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    background: #22c55e;
+    color: white;
 }
 
 button:hover {
-    background: #16a34a;
+    opacity: 0.8;
+}
+
+.pedido {
+    background: #334155;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
 }
