@@ -32,5 +32,4 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
     const url = "https://wa.me/" + motorizado + "?text=" + encodeURIComponent(unescape(encodeURIComponent(mensaje)));
 
     window.open(url, "_blank");
-    document.getElementById("pedidoForm").reset();
 });

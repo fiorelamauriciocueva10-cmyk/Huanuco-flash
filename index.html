@@ -7,51 +7,39 @@
 </head>
 <body>
 
-<script>
-  let password = "flash123"; // cambia tu contraseña aquí
-  let ingreso = prompt("Ingrese contraseña:");
+    <div class="container">
+        <h1>🚀 Huánuco Flash</h1>
+        <h3>Panel de pedidos</h3>
 
-  if (ingreso !== password) {
-    alert("Contraseña incorrecta");
-    window.location.href = "https://google.com";
-  }
-</script>
+        <form id="pedidoForm">
+            <input type="text" id="cliente" placeholder="Nombre del cliente" required>
+            <input type="text" id="telefono" placeholder="Número del cliente" required>
 
-<div class="container">
-    <h1>🚀 Huánuco Flash</h1>
-    <h3>Panel de pedidos</h3>
+            <input type="text" id="recojo" placeholder="Dirección de recojo" required>
+            <input type="text" id="entrega" placeholder="Dirección de entrega" required>
 
-    <form id="pedidoForm">
-        <input type="text" id="cliente" placeholder="Nombre del cliente" required>
-        <input type="text" id="telefono" placeholder="Número del cliente" required>
+            <textarea id="pedido" placeholder="¿Qué se recogerá?" required></textarea>
 
-        <input type="text" id="recojo" placeholder="Dirección de recojo" required>
+            <input type="text" id="costo" placeholder="Costo del servicio">
 
-        <input type="text" id="entrega" placeholder="Dirección de entrega (calle y número)" required>
-        <input type="text" id="referencia" placeholder="Referencia (ej: puerta azul, frente a farmacia)">
+            <select id="pago">
+                <option value="Efectivo">Efectivo</option>
+                <option value="Yape">Yape</option>
+                <option value="Plin">Plin</option>
+            </select>
 
-        <textarea id="pedido" placeholder="¿Qué se recogerá?" required></textarea>
+            <textarea id="obs" placeholder="Observaciones"></textarea>
 
-        <input type="text" id="costo" placeholder="Costo del servicio">
+            <select id="motorizado">
+                <option value="51916617587">Motorizado 1</option>
+                <option value="51916617587">Motorizado 2</option>
+            </select>
 
-        <select id="pago">
-            <option value="Efectivo">Efectivo</option>
-            <option value="Yape">Yape</option>
-            <option value="Plin">Plin</option>
-        </select>
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </div>
 
-        <textarea id="obs" placeholder="Observaciones"></textarea>
-
-        <select id="motorizado">
-            <option value="51916617587">Motorizado 1</option>
-            <option value="51916617587">Motorizado 2</option>
-        </select>
-
-        <button type="submit">Enviar pedido</button>
-    </form>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
