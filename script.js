@@ -12,7 +12,7 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
     const obs = document.getElementById("obs").value;
     const motorizado = document.getElementById("motorizado").value;
 
-    const mensaje = `\u{1F680} *NUEVO PEDIDO - HUÁNUCO FLASH* \u{1F680}
+   const mensaje = `\u{1F680} *NUEVO PEDIDO - HUÁNUCO FLASH* \u{1F680}
 
 \u{1F464} Cliente: ${cliente}
 \u{1F4DE} Teléfono: ${telefono}
@@ -29,7 +29,7 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
 
 \u{1F4DD} Obs: ${obs}`;
 
-    const url = "https://wa.me/" + motorizado + "?text=" + encodeURIComponent(mensaje);
+    const url = "https://web.whatsapp.com/send?phone=" + motorizado + "&text=" + encodeURIComponent(mensaje);
 
     window.open(url, "_blank");
 });
