@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Huánuco Flash - Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Huánuco Flash</h1>
+        <h3>Panel de pedidos</h3>
+
+        <form id="pedidoForm">
+            <input type="text" id="cliente" placeholder="Nombre del cliente" required>
+            <input type="text" id="telefono" placeholder="Número del cliente" required>
+
+            <input type="text" id="recojo" placeholder="Dirección de recojo" required>
+            <input type="text" id="entrega" placeholder="Dirección de entrega" required>
+
+            <textarea id="pedido" placeholder="¿Qué se recogerá?" required></textarea>
+
+            <input type="text" id="costo" placeholder="Costo del servicio">
+
+            <select id="pago">
+                <option value="Efectivo">Efectivo</option>
+                <option value="Yape">Yape</option>
+                <option value="Plin">Plin</option>
+            </select>
+
+            <textarea id="obs" placeholder="Observaciones"></textarea>
+
+            <select id="motorizado">
+                <option value="51916617587">Motorizado 1</option>
+                <option value="51916617587">Motorizado 2</option>
+            </select>
+
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
