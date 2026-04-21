@@ -11,20 +11,16 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
     let obs = document.getElementById("obs").value;
     let motorizado = document.getElementById("motorizado").value;
 
-    let mensaje = `🚀 NUEVO PEDIDO - HUÁNUCO FLASH
-
-👤 Cliente: ${cliente}
-📞 Teléfono: ${telefono}
-
-📍 Recojo: ${recojo}
-📍 Entrega: ${entrega}
-
-📦 Pedido: ${pedido}
-
-💰 Costo: ${costo}
-💳 Pago: ${pago}
-
-📝 Obs: ${obs}`;
+    let mensaje = 
+"🚚 *NUEVO PEDIDO - HUÁNUCO FLASH*\n\n" +
+"👤 Cliente: " + cliente + "\n" +
+"📞 Teléfono: " + telefono + "\n\n" +
+"📍 Recojo: " + recojo + "\n" +
+"🏁 Entrega: " + entrega + "\n\n" +
+"📦 Pedido: " + pedido + "\n\n" +
+"💰 Costo: " + costo + "\n" +
+"💳 Pago: " + pago + "\n\n" +
+"📝 Obs: " + obs;
 
     let url = "https://wa.me/" + motorizado + "?text=" + encodeURIComponent(mensaje);
 
